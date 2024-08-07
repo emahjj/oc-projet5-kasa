@@ -1,11 +1,11 @@
-import './index.css';
+import '../../App.scss'
 
 function Home() {
   return (
     <div className="App">
       <header className="App-header">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit and save to reload.
         </p>
         <a
           className="App-link"
