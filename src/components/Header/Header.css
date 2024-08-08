@@ -1,0 +1,37 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  /* Logo container */
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 210.322px;
+    height: 68px;
+    flex-shrink: 0;
+  }
+  
+  /* Navbar links */
+  .navbar__links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .navbar__link {
+    color: black;
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.2rem;
+  }
+  
+  .navbar__link:hover {
+    text-decoration: underline;
+  }
