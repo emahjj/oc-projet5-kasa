@@ -1,8 +1,17 @@
-import '../../App.scss'
+import React from 'react';
+import './Home.scss';
+import Gallery from '../../components/Gallery';
 
 function Home() {
-  return <div>Page d'accueil 🏡</div>
+  return (
+    <div className="home">
+      <div className="title">
+        <h1>Chez vous, partout et ailleurs 🏡</h1>
+      </div>
+      <Gallery />
+    </div>
+  )
 }
 
-export default Home
+export default Home;
 

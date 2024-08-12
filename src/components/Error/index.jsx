@@ -1,3 +1,4 @@
+import React from 'react';
 import './Error.css'
 import { Link } from 'react-router-dom'
 import Error404 from '../../assets/404.svg'
@@ -12,4 +13,4 @@ function Error() {
     )   
 }
  
-export default Error
+export default Error;
