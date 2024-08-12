@@ -1,0 +1,23 @@
+.home {
+    display: inline-flex;
+    padding-top: 45px;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.title2 {
+    width: 1240px;
+    height: 200px;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-shrink: 0;
+    border-radius: 25px;
+    background-image: url('../../assets/title2-background-image.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-filter: brightness(50%);
+  }

@@ -8,7 +8,7 @@ function Error() {
         <div className="error">
             <img src={Error404} alt="Error 404" className="error__img" />
             <h1 className="error__message">Oups! La page que vous demandez n'existe pas.</h1>
-            <Link className="error__link" to="/accueil">Retourner sur la page d’accueil</Link>
+            <Link className="error__link" to="/home">Retourner sur la page d’accueil</Link>
         </div>
     )   
 }

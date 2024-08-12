@@ -6,16 +6,18 @@
     gap: 50px;
 }
 
-.title {
+.title1 {
     width: 1240px;
     height: 200px;
     padding: 0px 50px;
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
     flex-shrink: 0;
     border-radius: 25px;
-    opacity: 0.6;
-    background: #000;
-    mix-blend-mode: darken;
-    background: url('../../assets/background.svg') lightgray -5.076px -524px / 100.819% 226.723% no-repeat;
-
-}
+    background-image: url('../../assets/title1-background-image.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-filter: brightness(50%);
+  }

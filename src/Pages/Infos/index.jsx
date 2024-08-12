@@ -1,7 +1,13 @@
 import React from 'react';
+import './Infos.scss';
 
 function Information() {
-    return <div>Page à propos ℹ️</div>
-}
+    return (
+        <div className="home">
+            <div className="title2">
+            </div>
+        </div>
+    )
+};
 
 export default Information;

@@ -1,42 +1,42 @@
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import { hover } from '@testing-library/user-event/dist/hover';
+import React from 'react'
 
-const CardImage = styled.img`
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    `
-    const CardWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    background-color: #FF6060;
-    border-radius: 30px;
-    width: 350px;
-    transition: 200ms;
-    &:hover {
-        cursor: pointer;
-        box-shadow: 2px 2px 10px #e2e3e9;
-    }
-`
 
-function Card({ title, picture }) {
-    return (
-        <CardWrapper>
-            <CardImage src={picture} alt="apartment" height={340} width={340} />
-            <span>{title}</span>
-        </CardWrapper>
-    )
+function Card({ picture, title }) {
+  return (
+    <div style={{ ...styles.card, backgroundImage: `url(${picture}), linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(10, 10, 10, 0.00) 42%, rgba(4, 4, 4, 0.20) 99.99%, rgba(0, 0, 0, 0.50) 100%)` }}>
+    <h3 style={styles.title}>{title}</h3>
+    </div>
+  );
 }
 
-Card.propTypes = {
-    title: PropTypes.string.isRequired,
-    picture: PropTypes.string.isRequired,
-}   
+const styles = {
 
-Card.defaultProps = {
-    title: "", 
-    picture:"", 
+  card: {
+    width: '340px',
+    height: '340px',
+    borderRadius: '25px',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    position: 'relative', 
+    overflow: 'hidden',
+  },
+  
+  image: {
+    width: '340px',
+    height: '340px', 
+    objectFit: 'cover',
+    borderRadius: '25px',
+  },
+
+  title: {
+    position: 'absolute',
+    bottom: '10px',
+    left: '10px',
+    padding: '5px 10px',
+    color: 'white', 
+  },
 }
 
 export default Card;
