@@ -1,21 +1,29 @@
+.card {
+    width: 340px;
+    height: 340px;
+    border-radius: 25px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .card h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    color: white;
+  }
+  
+  @media (max-width: 375px) {
+    .card {
+        width: 100%;
+        height: 1000px;
+        border-radius: 25px;
+    }
 
-const styles = {
-    card: {
-      border: '1px solid #ccc',
-      borderRadius: '8px',
-      padding: '16px',
-      maxWidth: '300px',
-      textAlign: 'center',
-      margin: '10px',
-    },
-    image: {
-      width: '100%',
-      height: 'auto',
-      borderRadius: '8px',
-    },
-    title: {
-      fontSize: '1.2em',
-      margin: '10px 0 0',
-    },
-     
-      
+  }
+  
