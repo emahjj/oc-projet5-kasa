@@ -29,11 +29,7 @@
     }
 
     &__arrow {
-        position: absolute;
-        transform: translateY(-50%);    
-        color: black;
-        border: none;
-        font-size: 24px;
+        position: absolute;  
         cursor: pointer;
         padding: 10px;
 
@@ -46,7 +42,7 @@
         }
 
         &:hover {
-            background-color: rgba(0, 0, 0, 0.8);
+            
         }
     }
 
@@ -62,7 +58,7 @@
 .header_title {
     display: flex;
     flex-direction: row;
-    gap: 550px;
+    gap: 5px;
     padding: 30px 0px 0px;
     align-items: center;
 
@@ -105,12 +101,8 @@
 }
 
 .apartment_description {
-   width: 1000px;
+   width: 1900px;
    justify-content: flex-start;
-
-    @media (max-width: 375px) {
-        font-size: 48px;
-      }
 }
 
 .host {

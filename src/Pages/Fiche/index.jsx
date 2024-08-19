@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import './Fiche.scss';
 import apartmentsData from '../../data/Apartments.json';
-import Carousel from '../../components/Carousel';
+import Descriptif from '../../components/Descriptif';
 
 function Fiche() {
     const { id } = useParams(); 
@@ -14,7 +14,7 @@ function Fiche() {
 
   return (
         <div className="">
-            <Carousel
+            <Descriptif
                 key={apartment.id} 
                 title={apartment.title}
                 description={apartment.description}
