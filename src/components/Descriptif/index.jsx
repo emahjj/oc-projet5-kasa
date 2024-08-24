@@ -5,35 +5,34 @@ import Carousel from "../Carousel";
 
 function Descriptif({title, location, pictures, host, tags, description, equipments, rating}) {
     return (
-        <div className="fichelogement">
+        <div className="apartment_description">
 
         <Carousel pictures={pictures} />
 
-            <div className="header_title">
-                <div className="apartment_description">
-                    <h2 className="apartment_name">{title}</h2>
-                    
+            <div className="description_frame">
+                <div className="description_header">
+                    <h2 className="name">{title}</h2>
+                    <p>{location}</p>
+                    <div className="filters">
+                        {tags.map((tag, index) => (
+                        <div key={index} className="filter_tag">{tag}</div>
+                        ))}
+                    </div>
                 </div>
 
-                <div className="host">
-                    <div className="host_name">{host.name}</div>
-                    <img className="host_picture" src={host.picture} alt={host.name} />
+
+                <div className="description_reviews">
+                    <div className="host">
+                        <div className="host_name">{host.name}</div>
+                        <img className="host_picture" src={host.picture} alt={host.name} />           
+                    </div>
+                    <div id="starRating">
+                        <StarRating rating={rating}/>
+                    </div>
                 </div>
-               
             </div>
 
-            <div className="header_subtitle">
-                <div className="location">{location}</div>
-                <div id="starRating">
-                    <StarRating rating={rating}/>
-                </div>
-            </div>
-            
-            <div className="filter_tags">
-                {tags.map((tag, index) => (
-                <div key={index} className="filter_tag">{tag}</div>
-                ))}
-            </div>    
+
 
             <div className="dropdowns">
                 <div className="dropdown_block">

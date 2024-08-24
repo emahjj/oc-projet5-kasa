@@ -1,15 +1,16 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import './Fiche.scss';
 import apartmentsData from '../../data/Apartments.json';
 import Descriptif from '../../components/Descriptif';
+import Error from '../../components/Error';
 
 function Fiche() {
     const { id } = useParams(); 
     const apartment = apartmentsData.find(apartment => apartment.id === id); 
   
     if (!apartment) {
-      return <div>Appartement non trouvé</div>; 
+      return <Error/>; 
     }
 
   return (

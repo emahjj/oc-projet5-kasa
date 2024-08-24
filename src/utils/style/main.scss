@@ -17,6 +17,10 @@ body {
   border-radius: 25px;
   box-sizing: border-box;
   width: 100%;
+
+  @media (max-width: 768px) {
+    font-size: 45px; 
+  }
 }
 
   /* ex: Chez vous, partout et ailleurs */
@@ -26,7 +30,7 @@ body {
     color: $primary-color;
     
     @media (max-width: 375px) {
-      font-size: 4rem;
+      font-size: 70px;
     }
   }
 
@@ -35,13 +39,19 @@ body {
     color: $secondary-color;
     font-size: 40px;
     font-weight: 500;
-    margin: 10px 0px;
+    margin: 55px 0px 15px;
+
+    @media (max-width: 375px) {
+      line-height: 1.4;
+      font-size: 65px;
+    }
   }
 
   /* ex: equipements */
 
   h3 {
     @media (max-width: 375px) {
-    font-size: 3rem;
-  }
+      font-size: 50px;
+      line-height: 1.4;
+    }
   }

@@ -1,4 +1,4 @@
-.fichelogement {
+.apartment_description {
     display: flex;
     margin-bottom: 50px;
     padding: 45px 50px;
@@ -10,10 +10,9 @@
     align-items: center;
     position: relative;
     width: 100%;
-    max-width: 1440px;
     margin: 0 auto;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 20px;
 
     &__content {
         width: 100%;
@@ -24,7 +23,13 @@
             max-width: 1440px;
             border-radius: 10px;
             object-fit: cover;
-        }
+
+            @media (max-width: 375px) {
+                width: 100%;
+                height: 1000px;
+                max-width: 1440px;
+            }
+        }    
     }
 
     &__arrow {
@@ -53,95 +58,105 @@
     }
 }
 
-
-.header_title {
+.description_frame {
     display: flex;
     flex-direction: row;
-    gap: 5px;
-    padding: 10px 0px 0px;
-    align-items: center;
-
+    justify-content: space-between;
+    
     @media (max-width: 375px) {
-        flex-direction: row;
-      }
+        flex-direction: column;
+    }
 }
 
-.header_subtitle {
+.description_header {
+    display: flex;
+    flex-direction: column;
+}
+
+.filters {
     display: flex;
     flex-direction: row;
-    gap: 550px;
-    padding: 20px 0px;
-    align-items: center;
-
-    @media (max-width: 375px) {
-        flex-direction: row;
-      }
-}
-
-.location {
-    width: 500px;
-}
-
-.star-rating {
-  display: flex;
-  width: 400px;
-  gap: 10px;
-  align-items: center;
-  justify-content: end;
-}
-
-.star {
-  color: gray; 
-  height: 29px;
-}
-
-.star.filled {
-  color: #FF6060;
-}
-
-.apartment_description {
-   width: 1900px;
-   justify-content: flex-start;
-}
-
-.host {
-    display: flex;
-    flex-direction: row;
-    width: 400px;
-    gap: 10px;
-    align-items: center;
-    justify-content: end;
-}
-
-.host_name {
-    color: #FF6060;
-    justify-content: left;
-    flex-wrap: wrap;
-}
-
-.host_picture {
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    flex-shrink: 0; 
-}
-
-.filter_tags {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+    gap: 25px;
     color: #FFF;
+    padding: 20px 0px;
 }
 
-.filter_tag {
-    height: 25px;
-    background: #FF6060;
-    font-size: 14px;
-    font-weight: 700;
-    padding: 3px 30px;
-    border-radius: 12px;
-    justify-content: center;
+    .filter_tag {
+        background: #FF6060;
+        font-weight: 700;
+        padding: 8px 60px;
+        border-radius: 12px;
+        justify-content: center;
+    }
+
+.description_reviews {
+    display: flex;
+    flex-direction: column; 
+    gap: 25px;
+    padding: 30px 0px 0px;
+
+    @media (max-width: 375px) {
+        flex-direction: row-reverse; 
+        justify-content: space-between;
+        align-items: center;
+    }
 }
+
+    .host {
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+        align-items: center;
+    }
+
+        .host_name {
+            color: #FF6060;
+            width: 200px;
+            font-size: 24px;
+            flex-wrap: wrap;
+            text-align: right;
+            
+            @media (max-width: 375px) {
+                font-size: 50px;
+            }
+        }
+
+        .host_picture {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            flex-shrink: 0; 
+           
+            @media (max-width: 375px) {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+
+    .star-rating {
+        display: flex;
+        width: 100%;
+        gap: 10px;
+        justify-content: space-between;
+       
+        @media (max-width: 375px) {
+            gap: 17px;
+        }
+    } 
+
+        .star {
+            color: gray; 
+            height: 40px;
+
+            @media (max-width: 375px) {
+                height: 60px;
+            }
+        }
+
+        .star.filled {
+            color: #FF6060;
+        }
 
 .dropdowns {
     display: flex;
@@ -161,6 +176,10 @@
     .dropdown_block {
         width: 45%;
         justify-content: flex-start;
+
+        @media (max-width: 375px) {
+            width: 100%;
+        }
     }
 
 
