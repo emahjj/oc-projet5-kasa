@@ -2,8 +2,9 @@ import React from "react";
 import './Descriptif.scss'
 import StarRating from "../Star";
 import Carousel from "../Carousel";
+import Collapse from "../Collapse";
 
-function Descriptif({title, location, pictures, host, tags, description, equipments, rating}) {
+function Descriptif({title, location, pictures, host, tags, rating, header, description, equipments}) {
     return (
         <div className="apartment_description">
 
@@ -31,25 +32,11 @@ function Descriptif({title, location, pictures, host, tags, description, equipme
                     </div>
                 </div>
             </div>
-
-
-
-            <div className="dropdowns">
-                <div className="dropdown_block">
-                    <div className="dropdown_open">Description</div>
-                    <div>{description}</div>
-                </div>
-                
-                <div className="dropdown_block">
-                    <div className="dropdown_open">Équipements</div>
-                    <ul>
-                    {equipments.map((equipment, index) => (
-                        <li key={index}>{equipment}</li>
-                    ))}
-                    </ul>`
-                </div>
-            </div>
-
+            
+            <div className="dropdowns_fiche">
+                <Collapse header={"Description"} description={description}/>
+                <Collapse header={"Équipements"} description={equipments}/>
+            </div>  
         </div>
     );
 }
