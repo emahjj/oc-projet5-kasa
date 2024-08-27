@@ -31,6 +31,16 @@
             }
         }    
     }
+    
+    &__counter {
+        position: absolute;  
+        cursor: pointer;
+        padding: 10px;
+        bottom: 10px;
+        left: 650px;
+        color:#FFF;
+    }
+
 
     &__arrow {
         position: absolute;  
@@ -45,9 +55,6 @@
             right: 10px;
         }
 
-        &:hover {
-            
-        }
     }
 
     @media (max-width: 375px) {

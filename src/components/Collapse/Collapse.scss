@@ -1,8 +1,7 @@
 .dropdown_title {
     display: flex;
     flex-direction: row;
-    padding: 10px 20px 10px 10px;
-    gap: 300px;
+    padding: 10px 10px 10px 10px;
     border-radius: 10px;
     background: #FF6060;
     color: #FFF;
@@ -20,7 +19,7 @@
     }
 
     @media (max-width: 375px) {
-        width: 100%;
+        width: 1320px;
       }
       
 }
