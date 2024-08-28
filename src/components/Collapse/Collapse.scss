@@ -14,10 +14,7 @@
         transform: rotate(180deg); 
     }
 
-    &:inactive svg {
-        transform: rotate(180deg); 
-    }
-
+    
     @media (max-width: 375px) {
         width: 1320px;
       }
