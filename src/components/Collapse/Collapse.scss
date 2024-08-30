@@ -1,7 +1,7 @@
 .dropdown_title {
     display: flex;
     flex-direction: row;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 20px 10px;
     border-radius: 10px;
     background: #FF6060;
     color: #FFF;
@@ -10,17 +10,19 @@
     justify-content: space-between;
     align-items: center;
 
-    &:active svg {
-        transform: rotate(180deg); 
+    .openArrow {
+        transform: 0.5s ease; 
     }
 
-    
-    @media (max-width: 375px) {
-        width: 1320px;
-      }
-      
-}
+    .openArrow.active {
+        transform: rotate(180deg); 
 
+        @media (max-width: 375px) {
+            height: 60px;
+            width: 60px;
+        }
+    } 
+}
     .dropdown_description {
         border-radius: 10px;
         margin-top: -15px;
@@ -30,7 +32,6 @@
         padding: 25px 30px 20px;
     }
 
-    ul {
+li {
     list-style-type: none;
-    padding: 0px;
 }

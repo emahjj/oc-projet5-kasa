@@ -1,7 +1,7 @@
 .title2 {
     position: relative; 
-    width: 90%;
-    max-width: 1440px;
+    width: 100%;
+    max-width: 1240px;
     height: 200px;
     padding: 0px 70px;
     display: flex;
@@ -44,12 +44,11 @@
 .dropdowns_apropos {
     display: flex;
     flex-direction: column;
-    padding: 0px 150px;
-    align-items: center;
     gap: 30px;
+    padding: 0px 150px;
 
     @media (max-width: 375px) {
-        padding: 20px 50px;
+        padding: 0px 100px;
         gap: 50px;
       }
 }

@@ -12,7 +12,7 @@ function Descriptif({title, location, pictures, host, tags, rating, header, desc
 
             <div className="description_frame">
                 <div className="description_header">
-                    <h2 className="name">{title}</h2>
+                    <h2>{title}</h2>
                     <p>{location}</p>
                     <div className="filters">
                         {tags.map((tag, index) => (

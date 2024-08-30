@@ -1,11 +1,9 @@
 /* Footer container */
 .footerbar {
     display: flex;
-    height: 100px;
     margin-top: 50px;
-    padding: 66px 464px 29px;
+    padding: 66px 464px 58px;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
     gap: 25px;
     flex-shrink: 0;

@@ -1,8 +1,15 @@
 @import 'variables';
 
+html {
+
+}
 #root {
   width: 1440px;
   margin: 0px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 // Styles globaux
@@ -16,7 +23,7 @@ body {
   line-height: 142.6%;
   border-radius: 25px;
   box-sizing: border-box;
-  width: 100%;
+  margin: 0px;
 
   @media (max-width: 768px) {
     font-size: 45px; 
@@ -40,6 +47,7 @@ body {
     font-size: 40px;
     font-weight: 500;
     margin: 55px 0px 15px;
+    line-height: 1.1;
 
     @media (max-width: 375px) {
       line-height: 1.4;

@@ -1,16 +1,13 @@
 /* Navbar container */
 .navbar {
   display: flex;
-  gap: 880px;
+  justify-content: space-between;
   align-items: center;
-  max-width: 1440px; 
+  padding: 45px 100px 0;
   width: 100%;
-  padding: 45px 50px 0;
-  margin: 0, auto;
-  
 
   @media (max-width: 375px) {
-    gap: 300px;
+    gap: 0px;
   }
 }
   /* Logo container */
@@ -22,7 +19,6 @@
     .header_logo {
       width: 210.322px;
       height: 68px;
-      flex-shrink: 0;
 
       @media (max-width: 375px) {
         width: 600px;
@@ -36,7 +32,7 @@
     list-style: none;
     display: flex;
     gap: 60px;
-    
+    flex-shrink: 1;
   }
 
     .navbar__link {
