@@ -15,10 +15,7 @@ function Collapse({header, description}) {
                 </svg>
             </div>
             {openDescription && (
-            <div className="dropdown_description">
-                <p>{description}
-                </p>
-            </div>
+            <div className="dropdown_description">{description}</div>
             )}
         </div>       
     )

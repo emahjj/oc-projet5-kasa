@@ -12,7 +12,7 @@ function Fiche() {
     let equipmentstring = (
         <ul>
             {apartment.equipments.map((equipment, index) => (
-                <li key={id}>{equipment}</li>
+                <li key={index}>{equipment}</li>
             ))}
         </ul>
     )
