@@ -16,13 +16,13 @@ function Fiche() {
             ))}
         </ul>
     )
-  
+
     if (!apartment) {
       return <Error/>; 
     }
 
   return (
-        <div className="">
+        <div>
             <Descriptif
                 key={apartment.id} 
                 title={apartment.title}
