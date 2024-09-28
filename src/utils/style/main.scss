@@ -1,7 +1,11 @@
 @import 'variables';
 
 #root {
+  width: 1440px;
   margin: 0px;
+
+  @media (max-width: 768px) {
+  }
 }
 
 * {
