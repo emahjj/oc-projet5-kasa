@@ -44,8 +44,13 @@
 .dropdowns_apropos {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    padding: 0px 50px;
+    gap: 20px;
+    padding: 0px 100px;
+
+
+    @media (max-width: 756px) {
+        padding: 0px 50px;
+    } 
 }
 
     .dropdown_block {

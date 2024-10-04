@@ -26,7 +26,6 @@ body {
   font-weight: 500;
   background-color: $primary-color;
   line-height: 142.6%;
-  
   box-sizing: border-box;
 }
 
@@ -41,7 +40,6 @@ body {
       justify-content: left;
       flex-wrap: wrap;
       padding: 0px 20px; 
-
     }
   }
 
@@ -55,7 +53,6 @@ body {
 
     @media (max-width: 375px) {
       line-height: 1.4;
-      font-size: 65px;
     }
   }
 
@@ -63,7 +60,6 @@ body {
 
   h3 {
     @media (max-width: 375px) {
-      font-size: 50px;
       line-height: 1.4;
     }
   }
