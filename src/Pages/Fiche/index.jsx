@@ -9,6 +9,10 @@ function Fiche() {
     const { id } = useParams(); 
     const apartment = apartmentsData.find(apartment => apartment.id === id); 
 
+    if (!apartment) {
+        return <Error />; 
+      }
+  
     let equipmentstring = (
         <ul>
             {apartment.equipments.map((equipment, index) => (
@@ -16,11 +20,7 @@ function Fiche() {
             ))}
         </ul>
     )
-
-    if (!apartment) {
-      return <Error/>; 
-    }
-
+    
   return (
         <div className='Home'>
             <Descriptif
