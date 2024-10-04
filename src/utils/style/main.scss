@@ -1,19 +1,24 @@
 @import 'variables';
 
 #root {
-  width: 1440px;
-  margin: 0px;
-
-  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto; 
   }
-}
 
 * {
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
 // Styles globaux
 body {
+  margin: 0px;
   font-family: Montserrat, sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -21,13 +26,8 @@ body {
   font-weight: 500;
   background-color: $primary-color;
   line-height: 142.6%;
-  border-radius: 25px;
+  
   box-sizing: border-box;
-  margin: 0px;
-
-  @media (max-width: 768px) {
-    font-size: 45px; 
-  }
 }
 
   /* ex: Chez vous, partout et ailleurs */
@@ -37,7 +37,11 @@ body {
     color: $primary-color;
     
     @media (max-width: 375px) {
-      font-size: 70px;
+      height: 320px;
+      justify-content: left;
+      flex-wrap: wrap;
+      padding: 0px 20px; 
+
     }
   }
 

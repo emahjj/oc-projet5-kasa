@@ -1,8 +1,10 @@
 /* Footer container */
 .footerbar {
     display: flex;
+    width: 100%;
     margin-top: 50px;
-    padding: 66px 464px 58px;
+    justify-content: center;
+    padding: 60px 60px;
     flex-direction: column;
     align-items: center;
     gap: 25px;
@@ -13,7 +15,7 @@
     height: 409px;
     padding: 66px 120px 58px; 
     justify-content: center;
-    gap: 100px;
+    gap: 10px;
     margin-top: 50px;
   }
 }
@@ -23,11 +25,6 @@
       width: 122px;
       height: 39.444px;
       flex-shrink: 0;
-
-      @media (max-width: 375px) {
-        width: 400px;
-        height: 150px;
-      }
     }
     
     /* Footer notes */
@@ -49,7 +46,7 @@
       line-height: 142.6%; /* 34.224px */
 
       @media (max-width: 375px) {
-        font-size: 40px;
+       
       }
     }
     

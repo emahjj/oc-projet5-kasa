@@ -3,11 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 45px 100px 0;
+  padding: 45px 70px 0;
   width: 100%;
 
   @media (max-width: 375px) {
-    gap: 0px;
+    gap: 20px;
   }
 }
   /* Logo container */
@@ -20,9 +20,9 @@
       width: 210.322px;
       height: 68px;
 
-      @media (max-width: 375px) {
-        width: 600px;
-        height: 350px;
+      @media (max-width: 375px) { 
+        width: 100px;
+        height: auto;
       }
     }
     
@@ -31,8 +31,12 @@
   .navbar__links {
     list-style: none;
     display: flex;
-    gap: 60px;
+    gap: 30px; 
     flex-shrink: 1;
+
+     @media (max-width: 375px) {
+      gap: 20px;
+    }
   }
 
     .navbar__link {
@@ -41,7 +45,7 @@
       flex-wrap: nowrap;
 
       @media (max-width: 375px) {
-        font-size: 50px;
+        font-size: 18px;
       }
     }
 
