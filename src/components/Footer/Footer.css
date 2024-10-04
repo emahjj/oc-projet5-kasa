@@ -43,10 +43,6 @@
       font-size: 24px;
       font-style: normal;
       font-weight: 500;
-      line-height: 142.6%; /* 34.224px */
-
-      @media (max-width: 375px) {
-       
-      }
+      line-height: 142.6%; 
     }
     

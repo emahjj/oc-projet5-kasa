@@ -4,10 +4,9 @@ import Collapse from '../../components/Collapse';
 
 function Information() {
     return (
-        <div>
-            <div className="home">
+        <div className="home">
                 <div className="title2"></div>
-            </div>
+            
 
             <div className="dropdowns_apropos">
                 <Collapse header={"Fiabilité"} description={"Les annonces postées sur kasa garantissent une fiablité totale. Les photos sont conformes aux logements, et toutes les informations sont régulèrement vérifiées par nos équipes."} />

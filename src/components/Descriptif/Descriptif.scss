@@ -1,8 +1,12 @@
 .apartment_description {
     display: flex;
     margin-bottom: 50px;
-    padding: 45px 100px;
+    padding: 45px 50px;
     flex-direction: column;
+
+    @media (max-width: 795px) {
+        padding: 45px 20px;
+    }
 }
 
 .carousel {
@@ -37,8 +41,10 @@
         cursor: pointer;
         padding: 10px;
         bottom: 10px;
-        left: 650px;
+        left: 50%;
         color:#FFF;
+        transform: translateX(-50%);
+        
     }
 
 
@@ -69,8 +75,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
-    @media (max-width: 375px) {
+    width: 100%;
+
+    @media (max-width: 795px) {
         flex-direction: column;
     }
 }
@@ -78,14 +85,21 @@
 .description_header {
     display: flex;
     flex-direction: column;
+    width: 50%;
+
+    @media (max-width: 795px) {
+        width: 100%;
+    }
+
 }
 
 .filters {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    
     color: #FFF;
     padding: 10px 0px;
+    justify-content: space-between;
 }
 
     .filter_tag {
@@ -94,18 +108,27 @@
         padding: 6px 30px;
         border-radius: 12px;
         justify-content: center;
+        
+        @media (max-width: 1033px) {
+            padding: 4px 9px;
+            font-size: 14px;
+        }
+
+
     }
 
 .description_reviews {
     display: flex;
     flex-direction: column; 
-    gap: 25px;
+    gap: 60px;
     padding: 30px 0px 0px;
 
-    @media (max-width: 375px) {
+    @media (max-width: 795px) {
         flex-direction: row-reverse; 
         justify-content: space-between;
         align-items: center;
+        width: 100%;
+        gap: 5px;
     }
 }
 
@@ -114,6 +137,12 @@
         flex-direction: row;
         gap: 60px;
         align-items: center;
+        
+        @media (max-width: 795px) {
+            gap: 20px;
+            width: 46%;
+        }
+      
     }
 
         .host_name {
@@ -123,8 +152,8 @@
             flex-wrap: wrap;
             text-align: right;
             
-            @media (max-width: 375px) {
-                font-size: 50px;
+            @media (max-width: 555px) {
+                font-size: 15px;
             }
         }
 
@@ -134,12 +163,20 @@
             height: 80px;
             flex-shrink: 0; 
            
-            @media (max-width: 375px) {
-                width: 200px;
-                height: 200px;
+            @media (max-width: 555px) {
+                width: 50px;
+                height: 50px;
             }
         }
 
+
+    #starRating {
+        width: 100%; 
+
+        @media (max-width: 795px) {
+   
+        }
+    } 
 
     .star-rating {
         display: flex;
@@ -151,9 +188,10 @@
             color: gray; 
             height: 40px;
 
-            @media (max-width: 375px) {
-                height: 60px;
+            @media (max-width: 555px) {
+                height: 25px;
             }
+         
         }
 
         .star.filled {
@@ -168,7 +206,7 @@
             gap: 40px; 
             padding: 30px 0px; 
 
-            @media (max-width: 375px) {
+            @media (max-width: 795px) {
                 padding: 70px 0px;
                 gap: 50px;
                 flex-direction: column;

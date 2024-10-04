@@ -22,7 +22,7 @@ function Fiche() {
     }
 
   return (
-        <div>
+        <div className='Home'>
             <Descriptif
                 key={apartment.id} 
                 title={apartment.title}
