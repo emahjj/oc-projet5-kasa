@@ -43,9 +43,10 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 100%;
+    width: 80%;
 
     @media (max-width: 756px) {
+        width: 100%;
     } 
 }
 

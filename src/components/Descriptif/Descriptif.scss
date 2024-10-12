@@ -96,10 +96,10 @@
 .filters {
     display: flex;
     flex-direction: row;
-    
     color: #FFF;
     padding: 10px 0px;
-    justify-content: space-between;
+    gap:10px;
+
 }
 
     .filter_tag {
