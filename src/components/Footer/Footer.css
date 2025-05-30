@@ -12,7 +12,7 @@
     background: #000;
   
   @media (max-width: 375px) {
-    height: 409px;
+    height: 209px;
     padding: 66px 120px 58px; 
     justify-content: center;
     gap: 10px;
@@ -44,5 +44,11 @@
       font-style: normal;
       font-weight: 500;
       line-height: 142.6%; 
+
+      @media (max-width: 375px) {
+        font-size: 16px;
+        width: 122px;
+        height: 39px;
     }
+  }
     

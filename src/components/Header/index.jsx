@@ -11,7 +11,7 @@ function Header() {
         </div>
         <div className="navbar__links">
             <Link className="navbar__link" to="/home">Accueil</Link>
-            <Link className="navbar__link" to="/a-propos">À propos</Link>
+            <Link className="navbar__link" to="/a-propos">A propos</Link>
         </div>
       </nav>
     );

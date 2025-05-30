@@ -2,11 +2,13 @@
 
 .gallery {
   width: 100%;
-  background-color:#F6F6F6;;
+  background-color:#F6F6F6;
   padding: 50px 0px;
-  border-radius: 30px;
+  border-radius: 20px;
 
-  @media (max-width: 555px) {
+  @media (max-width: 375px) {
+    background-color: white;
+    padding: 0px;
   }
 }
 
@@ -18,4 +20,9 @@
   width: 93%;
   gap: 60px 5%;
   margin: 0 auto;
+
+  @media (max-width: 375px) {
+    width: 100%;
+    gap: 20px;
+  }
 }

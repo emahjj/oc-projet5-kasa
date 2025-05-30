@@ -1,7 +1,7 @@
 .card {
     width: 30%;
     height: 340px;
-    border-radius: 25px;
+    border-radius: 20px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,8 +13,8 @@
     @media (max-width: 555px) {
       width: 100%;
       min-width: initial;
+      height: 255px;
     }
-  
   }
   
   .card h3 {
