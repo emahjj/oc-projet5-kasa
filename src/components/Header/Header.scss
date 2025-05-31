@@ -6,7 +6,7 @@
   padding: 45px 50px 0;
   width: 100%;
 
-  @media (max-width: 555px) {
+  @media (max-width: 375px) {
     padding: 45px 20px 0;
   }
 } 
@@ -31,13 +31,13 @@
   .navbar__links {
     list-style: none;
     display: flex;
-    gap: 50px;
+    gap: 50px; 
+    justify-content:flex-end;
 
     @media (max-width: 375px) {
       width: 190px;
       height: 17px;
-      gap: 26px;
-
+      gap: 12px;
     }
   }
 
@@ -47,7 +47,8 @@
       flex-wrap: nowrap;
     
       @media (max-width: 375px) {
-        font-size: 17px;
+        font-size: 12px;
+        text-transform: uppercase;
       }
     }
 
